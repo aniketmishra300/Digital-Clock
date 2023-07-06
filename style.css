@@ -36,6 +36,13 @@ body{
     
 } 
 
+select{
+    height: 20px;
+    width: 270px;
+    text-align: center;
+}
+
+
 .set
 {
     display: flex;
@@ -52,7 +59,7 @@ body{
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    width: 37vw;
+    width: 40% ;
     height: 100px;
     font-size: 23px;
     background-color: white;
@@ -144,9 +151,9 @@ body{
     display: none;
 } */
 
-#setalarm:hover::after{
+/* #setalarm:hover::after{
     content: "Party Time!";
-}
+} */
 
 
 .grab
@@ -187,4 +194,212 @@ body{
     background-color: #FFFFFF ;
     position: relative;
     left: 350px;
+}
+
+ /* PIXEL 5 MEDAI QUERY */
+@media screen and (min-width:380px) and (max-width:480px) {
+
+    *{
+        margin-left:5px ;
+    }
+    .container
+    {
+        height: 250px;
+        width: 370px;
+        justify-content:space-around;
+        /* padding: 2px;
+        margin: 2px; */
+        position: relative;
+        top: 130px;
+        left: 0px;
+        
+    }
+
+   
+    .wake1
+    {
+        width: 20pxpx;
+        height: 20px;
+    } 
+
+    
+    select{
+        height: 20px;
+        width: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .time
+    {
+        position: absolute;
+        top: 120px;
+        left: 30px;
+        width: 400px ;
+        height: 100px;
+    }
+
+    .image1
+    {
+        height: 300PX;
+        width: 405PX;
+        top: 650px;
+        left: 30px;
+    }
+
+    .grab
+{
+    top: 970px;
+    left: 35px;
+    width: 400px;
+    height: 100px;
+}
+
+.secondbox
+{
+    width: 340px;
+    height: 80px;
+    top: 160px;
+    left: 60px;
+    
+}
+
+.thirdbox
+{
+    width: 300px;
+    top: 175px;
+    left: 85px;
+    
+}
+#setalarm
+{
+    font-size: 15px;
+    top: 1080px;
+    left: 25px;
+    width: 170px;
+    height: 40px;
+}
+
+.feching
+{
+   
+    width: 250px;
+    height: 150px;
+    position: relative;
+    left: 190px;
+    top: 550px;
+}
+
+.good_wake
+{
+    width:415px;
+   position: relative;
+   top: 120px;
+   left: 10px;
+}
+}
+
+/* ipad mini */
+@media screen and (min-width:580px) and (max-width:780px) {
+
+    *{
+        margin-left:30px ;
+    }
+    .container
+    {
+        height: 250px;
+        width: 560px;
+        justify-content:space-around;
+        /* padding: 2px;
+        margin: 2px; */
+        position: relative;
+        top: 130px;
+        left: -10px;
+        
+    }
+
+   
+    .wake1
+    {
+        width: 20pxpx;
+        height: 20px;
+    } 
+
+    
+    select{
+        height: 20px;
+        width: 300px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .time
+    {
+        position: absolute;
+        top: 120px;
+        left: 30px;
+        width: 570px ;
+        height: 100px;
+    }
+
+    .image1
+    {
+        height: 300PX;
+        width: 600px;
+        top: 650px;
+        left: 30px;
+    }
+
+    .grab
+{
+    top: 970px;
+    left: 35px;
+    width: 570px;
+    height: 100px;
+}
+
+.secondbox
+{
+    width: 500px;
+    height: 80px;
+    top: 160px;
+    left: 60px;
+    
+}
+
+.thirdbox
+{
+    width: 450px;
+    top: 175px;
+    left: 85px;
+    
+}
+#setalarm
+{
+    font-size: 15px;
+    top: 1080px;
+    left: 25px;
+    width: 270px;
+    height: 40px;
+}
+
+.feching
+{
+   
+    width: 280px;
+    height: 170px;
+    position: relative;
+    left: 270px;
+    top: 550px;
+}
+
+.good_wake
+{
+    width:580px;
+   position: relative;
+   top: 120px;
+   left: -50px;
+}
 }
