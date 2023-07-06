@@ -30,28 +30,28 @@ function displayTime(){
         sec = "0" + sec;
     }
    
+
     document.getElementById('hours').innerHTML = hrs;
     document.getElementById('minutes').innerHTML = min;
     document.getElementById('seconds').innerHTML = sec;
+
+
 }
 
 setInterval(displayTime, 1000);
 
-//     const set = document.getElementById("setalarm");
-//    set.addEventListener("mouseover", ()=>{
-//         set.innerHTML = "abc";
-//       });
 
-      let text = document.getElementsByClassName('good_wake');
-      let img = document.getElementsByTagName('img');
-      let grab = document.getElementsByClassName('grab')
 
-      
-      function sample()
-      {
-        
-        let t = new Date();
-        let hrs = t.getHours();
+
+function sample()
+{
+    
+    let t = new Date();
+    let hrs = t.getHours();
+    
+          let text = document.getElementsByClassName('good_wake');
+          let img = document.getElementsByTagName('img');
+          let grab = document.getElementsByClassName('grab')
 
         let selecttag = document.querySelectorAll('select')
         let fetch1 = document.getElementById("Wake_up_time");
@@ -71,50 +71,58 @@ setInterval(displayTime, 1000);
             let item3 = selecttag[2].options[indexevening];
             let item4 = selecttag[3].options[indexnight];
 
-            console.log(item.textContent)
+           // console.log(item.textContent)
             fetch1.innerHTML = `Wake Up Time : ${item.textContent}`
             fetch2.innerHTML = `Lunch Time   : ${item2.textContent}`
             fetch3.innerHTML = `Nap Time     : ${item3.textContent}`
             fetch4.innerHTML = `Night Time   : ${item4.textContent}`
 
-            console.log(item);
-            console.log(item2);
-            console.log(item3);
-            console.log(item4);
+            // console.log(item);
+            // console.log(item2);
+            // console.log(item3);
+            // console.log(item4);
 
-
-        if(selecttag[0].value === hrs)
+        if(hrs<=12)
         {
             text[0].innerHTML = "GOOD MORNING!! WAKE UP !!"
-            img[5].src = './morning.png'
-            grab[0].innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!"
-        }
-        else if(selecttag[1].value === hrs)
+
+        } else if(hrs>12 && hrs<=16)
         {
             text[0].innerHTML = "GOOD AFTERNOON !! TAKE SOME SLEEP"
-            img[5].src = './lunch.jpg'
-            grab[0].innerHTML = "LET'S HAVE SOME LUNCH !!"
-
-        }
-        else if(selecttag[2].value === hrs)
+        }else if(hrs>16 && hrs<=20)
         {
             text[0].innerHTML = "GOOD EVENING !!"
-            img[5].src = './evening.jpg'
-            grab[0].innerHTML = "STOP YAWNING,GET SOME TEA..ITS JUST EVENING!"
-
-        }
-        else if(selecttag[3].value === hrs)
+        }else if(hrs>=24)
         {
             text[0].innerHTML = "GOOD NIGHT !!"
-            img[5].src = './night.jpg'
-            grab[0].innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
         }
-        // else{
-        //     return "";
-        // }
-        
 
-         
+        //////////////////////////
+
+        if((selecttag[0].value) == hrs)
+        {
+            grab[0].innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!"
+            img[5].src = './morning.jpg'
+        }
+        else if((selecttag[1].value) == hrs)
+        {
+            grab[0].innerHTML = "LET'S HAVE SOME LUNCH !!"
+            img[5].src = './lunch.jpg'
+
+        }
+        else if((selecttag[2].value) == hrs)
+        {
+            grab[0].innerHTML = "STOP YAWNING,GET SOME TEA..ITS JUST EVENING!"
+            img[5].src = './evening.jpg'
+
+        }
+        else if((selecttag[3].value) == hrs)
+        {
+            grab[0].innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
+            img[5].src = './night.jpg'
+        }
+        console.log(hrs)
+       console.log(parseInt(selecttag[1].value))
 
     }     
 
