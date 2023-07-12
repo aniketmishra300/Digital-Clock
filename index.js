@@ -92,7 +92,7 @@ function sample()
         }else if(hrs>16 && hrs<=20)
         {
             text[0].innerHTML = "STOP YAWNING,GET SOME TEA..ITS JUST EVENING!"
-        }else if(hrs>=24)
+        }else if(hrs<=24)
         {
             text[0].innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
         }
