@@ -200,18 +200,18 @@ select{
 @media screen and (min-width:380px) and (max-width:480px) {
 
     *{
-        margin-left:5px ;
+        margin-left:-7px ;
     }
     .container
     {
         height: 250px;
-        width: 370px;
+        width: 330px;
         justify-content:space-around;
         /* padding: 2px;
         margin: 2px; */
         position: relative;
         top: 130px;
-        left: 0px;
+        left: 5px;
         
     }
 
@@ -225,7 +225,7 @@ select{
     
     select{
         height: 20px;
-        width: 200px;
+        width: 180px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -235,30 +235,31 @@ select{
     {
         position: absolute;
         top: 120px;
-        left: 30px;
-        width: 400px ;
+        left: 20px;
+        width: 380px ;
         height: 100px;
     }
 
     .image1
     {
-        height: 300PX;
-        width: 405PX;
+        height: 300px;
+        width: 380px;
         top: 650px;
-        left: 30px;
+        left: 15px;
     }
 
     .grab
-{
-    top: 970px;
-    left: 35px;
-    width: 400px;
-    height: 100px;
-}
+    {
+        top: 970px;
+        left: 20px;
+        width: 380px;
+        height: 100px;
+        text-align: center;
+    }
 
 .secondbox
 {
-    width: 340px;
+    width: 320px;
     height: 80px;
     top: 160px;
     left: 60px;
@@ -267,7 +268,7 @@ select{
 
 .thirdbox
 {
-    width: 300px;
+    width: 280px;
     top: 175px;
     left: 85px;
     
@@ -276,46 +277,165 @@ select{
 {
     font-size: 15px;
     top: 1080px;
-    left: 25px;
-    width: 170px;
+    left: 15px;
+    width: 160px;
     height: 40px;
+}
+
+.logo{
+margin-left: 20px;
 }
 
 .feching
 {
    
-    width: 250px;
+    width: 220px;
     height: 150px;
     position: relative;
     left: 190px;
     top: 550px;
+    text-align: center;
 }
 
 .good_wake
 {
-    width:415px;
+    width:380px;
    position: relative;
    top: 120px;
-   left: 10px;
+   left: 35px;
 }
 }
 
-/* ipad mini */
-@media screen and (min-width:580px) and (max-width:780px) {
+/* IPHONESE MEDAI QUERY */
+@media screen and (min-width:360px) and (max-width:480px) {
 
     *{
-        margin-left:30px ;
+        margin-left:-7px ;
     }
     .container
     {
         height: 250px;
-        width: 560px;
+        width: 330px;
         justify-content:space-around;
         /* padding: 2px;
         margin: 2px; */
         position: relative;
         top: 130px;
-        left: -10px;
+        left: 5px;
+        
+    }
+
+   
+    .wake1
+    {
+        width: 20pxpx;
+        height: 20px;
+    } 
+
+    
+    select{
+        height: 20px;
+        width: 180px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .time
+    {
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        width: 380px ;
+        height: 100px;
+    }
+
+    .image1
+    {
+        height: 300px;
+        width: 380px;
+        top: 650px;
+        left: 15px;
+    }
+
+    .grab
+    {
+        top: 970px;
+        left: 20px;
+        width: 380px;
+        height: 100px;
+        text-align: center;
+    }
+
+.secondbox
+{
+    width: 320px;
+    height: 80px;
+    top: 160px;
+    left: 60px;
+    
+}
+
+.thirdbox
+{
+    width: 280px;
+    top: 175px;
+    left: 85px;
+    
+}
+#setalarm
+{
+    font-size: 15px;
+    top: 1080px;
+    left: 15px;
+    width: 160px;
+    height: 40px;
+}
+
+.logo{
+margin-left: 20px;
+}
+
+.feching
+{
+   
+    width: 220px;
+    height: 150px;
+    position: relative;
+    left: 190px;
+    top: 550px;
+    text-align: center;
+}
+
+.good_wake
+{
+    width:380px;
+   position: relative;
+   top: 120px;
+   left: 35px;
+}
+}
+
+/* ipad mini */
+@media screen and (min-width:580px) and (max-width:850px) {
+
+    *{
+        margin:5px ;
+    }
+    body{
+        margin-left: 40px;
+    }
+    
+    .container
+    {
+        height: 280px;
+        width: 640px;
+        justify-content:space-around;
+        /* padding: 2px;
+        margin: 2px; */
+        position: relative;
+        top: 150px;
+        left: -25px;
         
     }
 
@@ -340,29 +460,29 @@ select{
         position: absolute;
         top: 120px;
         left: 30px;
-        width: 570px ;
+        width: 670px ;
         height: 100px;
     }
 
     .image1
     {
-        height: 300PX;
-        width: 600px;
-        top: 650px;
-        left: 30px;
+        height: 320PX;
+        width: 670px;
+        top: 680px;
+        left: 35px;
     }
 
     .grab
 {
-    top: 970px;
+    top: 1010px;
     left: 35px;
-    width: 570px;
+    width: 670px;
     height: 100px;
 }
 
 .secondbox
 {
-    width: 500px;
+    width: 590px;
     height: 80px;
     top: 160px;
     left: 60px;
@@ -371,7 +491,7 @@ select{
 
 .thirdbox
 {
-    width: 450px;
+    width: 530px;
     top: 175px;
     left: 85px;
     
@@ -379,27 +499,136 @@ select{
 #setalarm
 {
     font-size: 15px;
-    top: 1080px;
-    left: 25px;
+    top: 1130px;
+    left: 35px;
     width: 270px;
     height: 40px;
 }
 
 .feching
 {
-   
-    width: 280px;
-    height: 170px;
+   line-height: 35px;
+   font-size: 25px;
+    width: 320px;
+    height: 200px;
     position: relative;
-    left: 270px;
-    top: 550px;
+    left: 320px;
+    top: 580px;
 }
 
 .good_wake
 {
-    width:580px;
+    width:670px;
    position: relative;
-   top: 120px;
-   left: -50px;
+   top: 140px;
+   left: -15px;
+}
+}
+
+@media screen and (min-width:800px) and (max-width:920px) {
+
+    *{
+        margin:5px ;
+    }
+    body{
+        margin-left: 40px;
+    }
+    
+    .container
+    {
+        height: 280px;
+        width: 640px;
+        justify-content:space-around;
+        /* padding: 2px;
+        margin: 2px; */
+        position: relative;
+        top: 150px;
+        left: -25px;
+        
+    }
+
+   
+    .wake1
+    {
+        width: 20pxpx;
+        height: 20px;
+    } 
+
+    
+    select{
+        height: 20px;
+        width: 300px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .time
+    {
+        position: absolute;
+        top: 120px;
+        left: 30px;
+        width: 670px ;
+        height: 100px;
+    }
+
+    .image1
+    {
+        height: 320PX;
+        width: 670px;
+        top: 680px;
+        left: 35px;
+    }
+
+    .grab
+{
+    top: 1010px;
+    left: 35px;
+    width: 670px;
+    height: 100px;
+}
+
+.secondbox
+{
+    width: 590px;
+    height: 80px;
+    top: 160px;
+    left: 60px;
+    
+}
+
+.thirdbox
+{
+    width: 530px;
+    top: 175px;
+    left: 85px;
+    
+}
+#setalarm
+{
+    font-size: 15px;
+    top: 1130px;
+    left: 35px;
+    width: 270px;
+    height: 40px;
+}
+
+.feching
+{
+   line-height: 35px;
+   font-size: 25px;
+    width: 320px;
+    height: 200px;
+    position: relative;
+    left: 320px;
+    top: 580px;
+}
+
+.good_wake
+{
+    width:670px;
+   position: relative;
+   top: 140px;
+   left: -15px;
 }
 }
