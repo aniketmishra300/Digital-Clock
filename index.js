@@ -84,45 +84,45 @@ function sample()
 
         if(hrs<=12)
         {
-            text[0].innerHTML = "GOOD MORNING!! WAKE UP !!"
+            text[0].innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!"
 
         } else if(hrs>12 && hrs<=16)
         {
-            text[0].innerHTML = "GOOD AFTERNOON !! TAKE SOME SLEEP"
+            text[0].innerHTML = "LET'S HAVE SOME LUNCH !!" 
         }else if(hrs>16 && hrs<=20)
         {
-            text[0].innerHTML = "GOOD EVENING !!"
+            text[0].innerHTML = "STOP YAWNING,GET SOME TEA..ITS JUST EVENING!"
         }else if(hrs>=24)
         {
-            text[0].innerHTML = "GOOD NIGHT !!"
+            text[0].innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
         }
 
         //////////////////////////
 
         if((selecttag[0].value) == hrs)
         {
-            grab[0].innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!"
+            grab[0].innerHTML =  "GOOD MORNING!! WAKE UP !!"
             img[5].src = './morning.jpg'
         }
         else if((selecttag[1].value) == hrs)
         {
-            grab[0].innerHTML = "LET'S HAVE SOME LUNCH !!"
+            grab[0].innerHTML = "GOOD AFTERNOON !! TAKE SOME SLEEP"
             img[5].src = './lunch.jpg'
 
         }
         else if((selecttag[2].value) == hrs)
         {
-            grab[0].innerHTML = "STOP YAWNING,GET SOME TEA..ITS JUST EVENING!"
+            grab[0].innerHTML = "GOOD EVENING !!"
             img[5].src = './evening.jpg'
 
         }
         else if((selecttag[3].value) == hrs)
         {
-            grab[0].innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
+            grab[0].innerHTML =  "GOOD NIGHT !!"
             img[5].src = './night.jpg'
         }
         console.log(hrs)
-       console.log(parseInt(selecttag[1].value))
+       console.log((selecttag[1].value))
 
     }     
 
