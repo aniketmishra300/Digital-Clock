@@ -116,7 +116,7 @@ function sample()
             img[5].src = './evening.jpg'
 
         }
-        else if((selecttag[3].value) == hrs)
+        else if(parseInt(selecttag[3].value) == hrs)
         {
             grab[0].innerHTML =  "GOOD NIGHT !!"
             img[5].src = './night.jpg'
