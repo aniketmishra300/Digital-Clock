@@ -1,18 +1,26 @@
 *{
-    margin: 10px 30px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
     background-color: rgb(134, 19, 241);
     width: 100%;
+    /* height: 100%; */
+}
+
+.logo
+{
+    position: relative;
+    left: 50px;
 }
 
 .container
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     background-color: white;
     height: 50vh;
     width: 40vw;
@@ -33,23 +41,30 @@ body{
 {
     width: 45px;
     height: 45px;
-    padding: 0px;
-    display: flex;
-    justify-self: flex-start;
+    margin-right: 35px;
+    
+    /* margin: 10px; */
+    /* padding: 20px; */
+    /* display: flex;
+    justify-self: flex-start; */
     
 } 
 
 select{
-    height: 20px;
+    height: 30px;
     width: 270px;
     text-align: center;
+    margin-left: 25px;
 }
 
 
 .set
 {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 90px;
 }
 
 
@@ -60,9 +75,9 @@ select{
     left: 800px;
     color: #8A11BF;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    width: 40% ;
+    width: 39% ;
     height: 100px;
     font-size: 23px;
     background-color: white;
@@ -99,7 +114,8 @@ select{
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 500px;
+    width: 100px;
+    margin: 20px;
     font-size: larger;
     border-radius: 10px;
     background-color: #c766f1;
@@ -124,9 +140,12 @@ select{
     background-color: violet;
     height: 80px;
     width:43vw;
+    position: relative;
+    left: 55px;
     color: white;
     font-size: 28px;
     border-radius: 10px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +157,9 @@ select{
     justify-content: center;
     align-items: center;
     color: white;
-    position: absolute;
+    position: relative;
+    left: 50px;
+    top: 20px;
     width: 270px;
     height: 50px;
     border-radius: 10px;
@@ -188,15 +209,19 @@ select{
 
 .feching
 {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
     width: 250px;
     height: 150px;
     color: #F25CFE;
     border-radius: 10px;
     background-color: #FFFFFF ;
     position: relative;
-    left: 350px;
+    left: 450px;
+    top: -30px;
 }
 
  /* PIXEL 5 MEDAI QUERY */
@@ -217,6 +242,12 @@ select{
         top: 130px;
         left: 5px;
         
+    }
+    
+    .set
+    {
+        font-size: 10px;
+        line-height: 70px;
     }
 
    
@@ -301,34 +332,40 @@ margin-left: 20px;
     text-align: center;
 }
 
-.good_wake
-{
+    .good_wake
+    {
     width:380px;
-   position: relative;
-   top: 120px;
-   left: 35px;
-}
+    position: relative;
+    top: 120px;
+    left: 35px;
+    }
 }
 
 /* IPHONESE MEDAI QUERY */
 @media screen and (min-width:360px) and (max-width:480px) {
 
     *{
-        margin-left:-7px ;
+        /* margin-left:-7px ; */
     }
+
     .container
     {
         height: 250px;
-        width: 320px;
+        width: 310px;
         justify-content:space-around;
         /* padding: 2px;
         margin: 2px; */
         position: relative;
-        top: 130px;
-        left: 5px;
+        top: 170px;
+        left: 0px;
         
     }
-
+    .set
+    {
+       
+        font-size: 12px;
+        line-height: 30px;
+    }
    
     .wake1
     {
@@ -339,7 +376,7 @@ margin-left: 20px;
     
     select{
         height: 20px;
-        width: 180px;
+        width: 150px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -357,8 +394,8 @@ margin-left: 20px;
     .image1
     {
         height: 300px;
-        width: 360px;
-        top: 650px;
+        width: 350px;
+        top: 660px;
         left: 15px;
     }
 
@@ -366,7 +403,7 @@ margin-left: 20px;
     {
         top: 970px;
         left: 20px;
-        width: 360px;
+        width: 350px;
         height: 100px;
         text-align: center;
     }
@@ -390,9 +427,9 @@ margin-left: 20px;
 #setalarm
 {
     font-size: 15px;
-    top: 1080px;
+    top: 590px;
     left: 15px;
-    width: 160px;
+    width: 150px;
     height: 40px;
 }
 
@@ -405,36 +442,43 @@ margin-left: 20px;
     width: 200px;
     height: 150px;
     position: relative;
-    left: 190px;
+    left: 170px;
     top: 550px;
+    font-size: 14px;
     text-align: center;
 }
 
 .good_wake
 {
-    width:360px;
+    width:350px;
+    font-size: 25px;
    position: relative;
-   top: 120px;
-   left: 35px;
+   top: 160px;
+   left: 20px;
 }
 }
 
 @media screen and (min-width:390px) and (max-width:480px) {
 
     *{
-        margin-left:-7px ;
+        /* margin-left:-7px ; */
     }
     .container
     {
         height: 250px;
-        width: 320px;
-        justify-content:space-around;
+        width: 330px;
+        /* justify-content:space-around; */
         /* padding: 2px;
         margin: 2px; */
-        position: relative;
         top: 160px;
-        left: 5px;
+        left: -5px;
         
+    }
+
+    .set
+    {
+        font-size: 10px;
+        line-height: 20px;
     }
 
    
@@ -498,10 +542,11 @@ margin-left: 20px;
 #setalarm
 {
     font-size: 15px;
-    top: 1080px;
+    top: 600px;
     left: 15px;
     width: 160px;
     height: 40px;
+    /* z-index: 1; */
 }
 
 .logo{
@@ -514,8 +559,9 @@ margin-left: 20px;
     height: 150px;
     position: relative;
     left: 190px;
-    top: 600px;
+    top: 560px;
     text-align: center;
+    font-size: 15px;
 }
 
 .good_wake
@@ -523,30 +569,139 @@ margin-left: 20px;
     width:360px;
    position: relative;
    top: 150px;
-   left: 35px;
+   left: 20px;
 }
 }
 
 /* ipad mini */
-@media screen and (min-width:580px) and (max-width:850px) {
+@media screen and (min-width:540px) and (max-width:850px) {
 
-    *{
+    /* *{
         margin:5px ;
-    }
-    body{
-        margin-left: 40px;
-    }
-    
+    } */
+
     .container
     {
-        height: 280px;
-        width: 640px;
+        height: 400px;
+        width: 630px;
         justify-content:space-around;
         /* padding: 2px;
         margin: 2px; */
         position: relative;
-        top: 150px;
-        left: -25px;
+        top: 160px;
+        left: 10px;
+        
+    }
+
+    .set{
+        font-size: 20px;
+    }
+   
+    .wake1
+    {
+        width: 20pxpx;
+        height: 20px;
+    } 
+
+    
+    select{
+        height: 20px;
+        width: 300px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .time
+    {
+      
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        width: 680px ;
+        height: 100px;
+    }
+
+    .image1
+    {
+        height: 400px;
+        width: 670px;
+        top: 800px;
+        left: 20px;
+    }
+
+    .grab
+    {
+        top: 1210px;
+        left: 20px;
+        width: 670px;
+        height: 100px;
+    }
+
+    .secondbox
+    {
+        width: 610px;
+        height: 80px;
+        top: 160px;
+        left: 60px;    
+    }
+
+.thirdbox
+{
+    width: 550px;
+    top: 175px;
+    left: 85px;
+    
+}
+#setalarm
+{
+    font-size: 15px;
+    top: 690px;
+    left: 15px;
+    width: 300px;
+    height: 60px;
+}
+
+.feching
+{
+   line-height: 50px;
+   font-size: 25px;
+    width: 350px;
+    height: 200px;
+    position: relative;
+    left: 350px;
+    top: 630px;
+}
+
+.good_wake
+{
+    width:670px;
+   position: relative;
+   top: 150px;
+   left: 25px;
+}
+
+}
+
+@media screen and (min-width:760px) and (max-width:920px) {
+
+    *{
+        margin:10px ;
+    }
+    /* body{
+        margin-left: 40px;
+    }
+     */
+    .container
+    {
+        height: 400px;
+        width: 690px;
+        justify-content:space-around;
+        /* padding: 2px;
+        margin: 2px; */
+        position: relative;
+        top: 140px;
+        left: -10px;
         
     }
 
@@ -571,146 +726,37 @@ margin-left: 20px;
         position: absolute;
         top: 120px;
         left: 30px;
-        width: 670px ;
+        width: 720px ;
         height: 100px;
     }
 
     .image1
     {
-        height: 320PX;
-        width: 670px;
-        top: 680px;
-        left: 35px;
-    }
-
-    .grab
-{
-    top: 1010px;
-    left: 35px;
-    width: 670px;
-    height: 100px;
-}
-
-.secondbox
-{
-    width: 590px;
-    height: 80px;
-    top: 160px;
-    left: 60px;
-    
-}
-
-.thirdbox
-{
-    width: 530px;
-    top: 175px;
-    left: 85px;
-    
-}
-#setalarm
-{
-    font-size: 15px;
-    top: 1130px;
-    left: 35px;
-    width: 270px;
-    height: 40px;
-}
-
-.feching
-{
-   line-height: 35px;
-   font-size: 25px;
-    width: 320px;
-    height: 200px;
-    position: relative;
-    left: 320px;
-    top: 580px;
-}
-
-.good_wake
-{
-    width:670px;
-   position: relative;
-   top: 140px;
-   left: -15px;
-}
-}
-
-@media screen and (min-width:800px) and (max-width:920px) {
-
-    *{
-        margin:5px ;
-    }
-    body{
-        margin-left: 40px;
-    }
-    
-    .container
-    {
-        height: 280px;
-        width: 640px;
-        justify-content:space-around;
-        /* padding: 2px;
-        margin: 2px; */
-        position: relative;
-        top: 150px;
-        left: -25px;
-        
-    }
-
-   
-    .wake1
-    {
-        width: 20pxpx;
-        height: 20px;
-    } 
-
-    
-    select{
-        height: 20px;
-        width: 300px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .time
-    {
-        position: absolute;
-        top: 120px;
+        height: 400px;
+        width: 720px;
+        top: 810px;
         left: 30px;
-        width: 670px ;
-        height: 100px;
-    }
-
-    .image1
-    {
-        height: 320PX;
-        width: 670px;
-        top: 680px;
-        left: 35px;
     }
 
     .grab
-{
-    top: 1010px;
-    left: 35px;
-    width: 670px;
-    height: 100px;
-}
+    {
+        top: 1230px;
+        left: 35px;
+        width: 720px;
+        height: 100px;
+    }
 
-.secondbox
-{
-    width: 590px;
-    height: 80px;
-    top: 160px;
-    left: 60px;
-    
-}
+    .secondbox
+    {
+        width: 640px;
+        height: 80px;
+        top: 160px;
+        left: 60px;    
+    }
 
 .thirdbox
 {
-    width: 530px;
+    width: 580px;
     top: 175px;
     left: 85px;
     
@@ -718,28 +764,28 @@ margin-left: 20px;
 #setalarm
 {
     font-size: 15px;
-    top: 1130px;
-    left: 35px;
-    width: 270px;
-    height: 40px;
+    top: 670px;
+    left: 15px;
+    width: 300px;
+    height: 60px;
 }
 
 .feching
 {
    line-height: 35px;
    font-size: 25px;
-    width: 320px;
+    width: 350px;
     height: 200px;
     position: relative;
-    left: 320px;
-    top: 580px;
+    left: 380px;
+    top: 600px;
 }
 
 .good_wake
 {
-    width:670px;
+    width:730px;
    position: relative;
-   top: 140px;
-   left: -15px;
+   top: 130px;
+   left: -5px;
 }
 }
